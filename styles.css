@@ -1,0 +1,62 @@
+body{
+    margin:0px;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.nav-buttons{
+    visibility: hidden;
+}
+
+.nav-buttons>li{
+    padding: 0px 3px;
+}
+
+.airbnb-icon{
+    width:30px;
+    height: 30px;
+    margin: 10px;
+}
+input{
+    width: 100%;
+}
+
+.search-icon{
+    width:20px;
+    height: 20px;
+    margin: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 8px
+}
+    
+.profile-icon{
+        width:20px;
+        height: 20px;
+        margin: 10px;
+        border-radius: 30px;
+        visibility: hidden;
+    }
+
+
+@media only screen and (min-width:550px){
+    .nav-buttons{
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-buttons>li{
+        list-style-type: none;
+    }
+
+    .profile-icon{
+        visibility: visible;
+    }
+}
